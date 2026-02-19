@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/next_handler"
+  status = 200
+
+# Optional: Environment variables can also be set here, 
+# but it's more secure to set them in the Netlify UI.
+# [build.environment]
+#   NEXT_PUBLIC_SUPABASE_URL = "..."
+#   NEXT_PUBLIC_SUPABASE_ANON_KEY = "..."
