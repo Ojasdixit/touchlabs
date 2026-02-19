@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useState, useEffect } from 'react';
 import { RiTimeLine, RiSaveLine } from 'react-icons/ri';
 import { getStaff, getStaffSchedules, saveStaffSchedules } from '@/lib/actions';

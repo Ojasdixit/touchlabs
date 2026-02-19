@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useState, useEffect } from 'react';
 import { RiAddLine, RiEditLine, RiDeleteBinLine, RiPaletteLine } from 'react-icons/ri';
 import { getServices, createService, updateService, deleteService } from '@/lib/actions';

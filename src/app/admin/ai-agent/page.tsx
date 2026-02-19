@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useState, useEffect, useRef } from 'react';
 import { RiRobotLine, RiSaveLine, RiPlayCircleLine, RiSendPlaneLine, RiShieldKeyholeLine, RiAddLine, RiDeleteBinLine } from 'react-icons/ri';
 import { getTenantSettings, testAIChat, debugFixAccount, getBossProfiles, createBossProfile, deleteBossProfile } from '@/lib/actions';
